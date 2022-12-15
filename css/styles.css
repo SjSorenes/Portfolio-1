@@ -14,7 +14,6 @@ body {
 }
 
 main {
-    padding: 0 45px;
     box-sizing: border-box;
 }
 
@@ -100,6 +99,15 @@ img {
     padding: 0 30px;
 }
 
+
+.padding-sides-45 {
+    padding: 0 45px;
+}
+
+.padding-bottom-35 {
+    padding: 0 0 35px;
+}
+
 .circle {
     border-radius: 50%;
 }
@@ -111,6 +119,25 @@ h2, h3, a, p, span {
 .top-border {
     box-sizing: border-box;
     border-top: 1px solid #707070;
+}
+
+.bottom-border {
+    box-sizing: border-box;
+    border-bottom: 1px solid #707070;
+}
+
+.button-primary {
+    background-color: #CFCFCF;
+    color: #3D3D3D;
+    text-align: center;
+    padding: 5px;
+}
+
+.button-secondary {
+    background-color: #707070;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
 }
 
 .hidden {
@@ -144,7 +171,7 @@ h2, h3, a, p, span {
     }
 
     .restrict-less {
-        max-width: 1024px;
+        max-width: 760px;
         margin: auto;
     }
 
