@@ -10,22 +10,36 @@
 </head>
 
 <body>
-    <header class="flex restrict restrict-less desk-gap-120 space-between ">
-        <div>
-            <a href=""><img src="/images/logo-placeholder.png" alt="logo"></a>
+    <header class="flex restrict restrict-less desk-gap-120 space-between desk-center-content">
+        <div id="logo" class="logo">
+            <a href="index.html"><img src="/images/Logo.png" alt="logo"></a>
         </div>
+
         <nav id="nav">
-            <ul id="links" class="flex columns desk-rows desk-gap-40">
-                <li><a class="uppercase" href="index.html">Home</a></li>
-                <li><a class="uppercase" href="">Projects</a></li>
-                <li><a class="uppercase" href="about.html">About</a></li>
-                <li><a class="uppercase" href="contact.html">Contact</a></li>
-            </ul>
-            <div id="toggle" class="mobile"><img src="/images/Hamburger.png" alt="toggle hamburger menu"></div>
+            <span id="toggle" class="mobile">☰</span>
+
+            <div id="links_desktop">
+                <ul id="links" class="flex columns desk-rows desk-gap-40">
+                    <li><a class="uppercase" href="index.html">Home</a></li>
+                    <li><a class="uppercase" href="">Projects</a></li>
+                    <li><a class="uppercase" href="about.html">About</a></li>
+                    <li><a class="uppercase" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div id="links_mobile">
+                <ul>
+                    <li><a class="uppercase" href="index.html">Home</a></li>
+                    <li><a class="uppercase" href="">Projects</a></li>
+                    <li><a class="uppercase" href="about.html">About</a></li>
+                    <li><a class="uppercase" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <div class="restrict restrict-less">
         <main class="flex columns gap-75 desk-gap-120 margin-top-130-bottom-50">
+            <h1 class="hidden">Projects</h1>
+            <p>Here are some projects I've been working on.</p>
             <div class="flex columns gap-75">
                 <div class="padding-bottom-35 bottom-border">
                     <img src="/images/CSM-hamburger-active.jpg"
@@ -66,15 +80,16 @@
                     </div>
                 </div>
             </div>
-            <div class="">
+            <div>
                 <ul class="flex gap-20 center-content padding-sides-30">
                     <li class="social-media"><a
-                            href="https://www.linkedin.com/in/sophia-jean-s%C3%B8renes-13771a21a/"></a><img
-                            src="/images/Linkedin-logo-icon-png.png" alt="LinkedIn"></li>
-                    <li class="social-media"><a href="https://github.com/SjSorenes"></a><img
-                            src="/images/GitHub logo.png" alt="GitHub"></li>
-                    <li class="social-media"><a href="https://www.facebook.com/sjeliassen/"></a><img
-                            src="/images/Facebook-logo-blue-circle-large-transparent-png.png" alt="Facebook"></li>
+                            href="https://www.linkedin.com/in/sophia-jean-s%C3%B8renes-13771a21a/"><img
+                                src="/images/Linkedin-logo-icon-png.png" alt="LinkedIn"></a></li>
+                    <li class="social-media"><a href="https://github.com/SjSorenes"><img src="/images/GitHub logo.png"
+                                alt="GitHub"></a></li>
+                    <li class="social-media"><a href="https://www.facebook.com/sjeliassen/"><img
+                                src="/images/Facebook-logo-blue-circle-large-transparent-png.png" alt="Facebook"></a>
+                    </li>
                 </ul>
             </div>
         </main>
@@ -86,10 +101,10 @@
                 <div class="flex gap-40">
                     <ul>
                         <h3 class="uppercase">Navigation</h3>
-                        <li><a href="">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="">Projects</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                     <div>
                         <h3 class="uppercase">Contact</h3>
@@ -105,7 +120,7 @@
             </div>
         </div>
     </footer>
-
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>

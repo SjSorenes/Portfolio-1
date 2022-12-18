@@ -11,17 +11,29 @@
 
 <body>
     <header class="flex restrict restrict-less desk-gap-120 space-between desk-center-content">
-        <div>
-            <a href=""><img src="/images/logo-placeholder.png" alt="logo"></a>
+        <div id="logo" class="logo">
+            <a href=""><img src="/images/Logo.png" alt="logo"></a>
         </div>
+
         <nav id="nav">
-            <ul id="links" class="flex columns desk-rows desk-gap-40">
-                <li><a class="uppercase" href="">Home</a></li>
-                <li><a class="uppercase" href="projects.html">Projects</a></li>
-                <li><a class="uppercase" href="about.html">About</a></li>
-                <li><a class="uppercase" href="contact.html">Contact</a></li>
-            </ul>
-            <div id="toggle" class="mobile"><img src="/images/Hamburger.png" alt="toggle hamburger menu"></div>
+            <span id="toggle" class="mobile">☰</span>
+
+            <div id="links_desktop">
+                <ul id="links" class="flex columns desk-rows desk-gap-40">
+                    <li><a class="uppercase" href="">Home</a></li>
+                    <li><a class="uppercase" href="projects.html">Projects</a></li>
+                    <li><a class="uppercase" href="about.html">About</a></li>
+                    <li><a class="uppercase" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div id="links_mobile">
+                <ul>
+                    <li><a class="uppercase" href="">Home</a></li>
+                    <li><a class="uppercase" href="projects.html">Projects</a></li>
+                    <li><a class="uppercase" href="about.html">About</a></li>
+                    <li><a class="uppercase" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <div class="restrict">
@@ -31,18 +43,19 @@
                 <div class="width-50prc">
                     <h2 class="centered-text uppercase">Hi, I'm Sophia.</h2>
                     <p>I'm currently studying Front-end development at Noroff.</p>
-                    <p>Some other things you'll find me doing is <span id="word-carousell">placeholder</span>.</p>
+                    <p>Some other things you'll find me doing is <span id="word-carousell">reading, gaming, and cooking</span>.</p>
                 </div>
             </div>
-            <div class="">
+            <div>
                 <ul class="flex gap-20 center-content padding-sides-30">
                     <li class="social-media"><a
                             href="https://www.linkedin.com/in/sophia-jean-s%C3%B8renes-13771a21a/"><img
-                            src="/images/Linkedin-logo-icon-png.png" alt="LinkedIn"></a></li>
-                    <li class="social-media"><a href="https://github.com/SjSorenes"><img
-                            src="/images/GitHub logo.png" alt="GitHub"></a></li>
+                                src="/images/Linkedin-logo-icon-png.png" alt="LinkedIn"></a></li>
+                    <li class="social-media"><a href="https://github.com/SjSorenes"><img src="/images/GitHub logo.png"
+                                alt="GitHub"></a></li>
                     <li class="social-media"><a href="https://www.facebook.com/sjeliassen/"><img
-                            src="/images/Facebook-logo-blue-circle-large-transparent-png.png" alt="Facebook"></a></li>
+                                src="/images/Facebook-logo-blue-circle-large-transparent-png.png" alt="Facebook"></a>
+                    </li>
                 </ul>
             </div>
         </main>
@@ -55,9 +68,9 @@
                     <ul>
                         <h3 class="uppercase">Navigation</h3>
                         <li><a href="">Home</a></li>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                     <div>
                         <h3 class="uppercase">Contact</h3>
@@ -73,7 +86,7 @@
             </div>
         </div>
     </footer>
-
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
